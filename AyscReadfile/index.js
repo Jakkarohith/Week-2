@@ -10,7 +10,7 @@ if(input=='file1.txt'||input=='file2.txt'||input=='file3.txt')
         if (err) return console.error(err);
         console.log(data.toString());
      });
-     console.log("Program Ended");}
+     console.log("This statement will be executed in middle of file execution\n\n");}
 else{
     console.log("Wrong input");
 }
