@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Student information</title>
+</head>
+<body>
+        <style>
+                  #empdata {
+                    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+                    border-collapse: collapse;
+                    width: 75%;
+                }
+        
+                #empdata td, #empdata th {
+                    border: 1px solid #ddd;
+                    padding: 8px;
+                }
+                
+                #empdata tr:nth-child(even){background-color: #f2f2f2;}
+                
+                #empdata tr:hover {
+                    text-shadow: #ccc;
+                    font-size: 20px;
+                    background-color: #ddd;
+                    }
+                
+                #empdata th {
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                    text-align: center;
+                    background-color: #ff1a1a;
+                    color: white;
+                }
+                #submit,#display,#hide {
+                    background-color: #ff1a1a;
+                    border: none;
+                    color : white;
+                    padding: 15px 30px;
+                    text-align: center;
+                    display: inline-block;
+                    font-size: 16px;
+                }
+                input {
+                    padding: 15px 20px;
+                    margin: 8px 0;
+                    display: inline-block;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    box-sizing: border-box;
+                }
+                #regform
+                {
+                 background-color:#ff8080;
+                 margin: 10px 5px 0px 5px;   
+                }
+                #form
+                {
+                    text-align: right; 
+                   margin: 25px 90px 0px 0px ;
+                }
+                p{
+                 color: #e60000;
+                 font-family:"MV Boli" ;
+                 font-size: 30px;
+                 text-decoration:underline;
+                 text-decoration-color: #e60000;
+                 margin: 20px 125px 0px ; 
+                }
+                #center
+                {
+                 margin: 0px 500px 50px ;    
+                }
+        </style>
+    <div id="regform"><br>
+        <p align="right">Employee information</p>
+        <div id="form">            
+            <input type="text" id="idno" size="40" placeholder="Enter Id number:"  required/><br> 
+            <input type="text" id="firstname" size="40" placeholder="Enter Firstname:" required /><br>
+            <input type="text" id="lastname"  size="40"  placeholder="Enter Lastname:" required/><br>
+            <input type="email" id="email"  size="40"  placeholder="Enter Email:" required/><br>
+            <input type="text" id="phone"  size="40"  placeholder="Enter phone number:" maxlength="10"/><br>
+            <input type="text" id="des"  size="40"  placeholder="Enter designation :" /><br>
+            <input type="text" id="sal"  size="40"  placeholder="Enter salary:" /><br>
+            <input type="button" value="submit" id ="submit"><br><br>
+        </div>
+        <div id="center">
+        <input type="button" value="Display" id ="display" onclick="display()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <script type='text/javascript'>
+        var display=function(){
+        document.getElementById('empdata').style.display="block";
+        }
+        </script>
+        <input type="button" value="Hide" id ="hide" onclick="hide()">
+        <script type='text/javascript'>
+        var hide=function(){
+        document.getElementById('empdata').style.display="none";
+        }
+        </script>     
+        </div>
+    </div>
+    <br><br>
+    <div>
+        <center>
+            <table id="empdata" border="1">
+                <tbody id="empbody">
+
+                </tbody>
+            </table>
+        </center>
+    </div>
+    <script src="student.js"></script>
+</body>
+</html>
