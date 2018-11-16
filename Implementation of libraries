@@ -1,0 +1,80 @@
+Implementation of Bluebird:
+Installation : 
+Node.js
+npm install bluebird
+
+var Promise = require("bluebird");
+
+ES6:
+import * as Promise from 'bluebird';
+
+Methods in promise:
+promisify:It returns a new function that returns a promise instead of using a function.
+It is used on an error-first callback function.
+   
+Example:
+  var pr=require('bluebird');
+  var promisereadfile=pr.promisify(require("fs").readFile);
+  promisereadfile("file.txt","utf8")
+  .then(function(fileText){
+     console.log(fileText);
+   }).catch(function(err){
+    console.log("error reading file",err);
+})
+});
+promisifyall:It provides a promisified version of all callback functions in a library.
+It gives a function to be used as a promise.   
+Bind:
+  Creates a promise that is bound to a specific "this"
+All:
+  Takes an array of promises which it starts executing at the same time.
+  
+
+Q promise library :
+$q service helps in asynchronous execution of functions by returning a “promise” from the function call.
+The deferred object exposes the Promise instance and its APIs which are to be used for resolving the promise.
+A new instance of deferred is constructed by calling $q.defer(). It exposes three methods:
+
+resolve: resolves a promise with a value.
+reject: rejects a promise with a reason.
+notify: provides status updates.
+ 
+var deferred = $q.defer();
+// To fulfil a promise,we use .resolve
+deferred.resolve(data);
+// To reject a promise,we  use .reject
+deferred.reject(error);
+Example:
+var Q = require('q');
+var deferred = Q.defer();
+var promise = deferred.promise;
+ promise.then(function (val) {
+   console.log('Got : '+val);
+});
+promise.catch(function(err){
+   console.error("Error : "+err)
+})
+deferred.reject('Something bad happened');
+
+jQuery Promise:	
+This promise when a user need to run many deferred tasks asynchronously. $.when( ) takes specific  type of arguments which is jQuery deferred object.
+$.when() takes more than one promise in its arguements.
+Example:
+ function showDialogBox () {
+	var ret = $.Deferred();
+	ret.resolve();
+	return ret;
+}
+var s = showDialogBox();
+$.when(s).then(function() {
+	//do something after showDialogBox has done its job
+}); 
+
+ES6 promise polyfill:
+Installation:
+Node.js
+Installation:
+npm install es6-promise-polyfill
+
+var Promise = require('es6-promise-polyfill').Promise;
+var promise = new Promise();
