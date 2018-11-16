@@ -1,1 +1,8 @@
-callback hell:
+Defination of Callback hell:
+Callback hell is the eventual state of any complex callback oriented asynchronous program
+where the management of callbacks gets so hard that the performance benefits of callbacks notwithstanding,
+your code becomes extremely hard to understand, reason about and maintain.
+
+In simple terms,The situation where callbacks are nested within other callbacks several level dee,
+making the code difficult to understand and maintain.
+
