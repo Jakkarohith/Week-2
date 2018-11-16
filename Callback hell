@@ -6,3 +6,28 @@ your code becomes extremely hard to understand, reason about and maintain.
 In simple terms,The situation where callbacks are nested within other callbacks several level dee,
 making the code difficult to understand and maintain.
 
+Example:
+function hellcallback() {
+    setTimeout(function() {
+      console.log('This is the first function');
+      setTimeout(function() {
+        console.log('This is the second function');
+          setTimeout(function() {
+           console.log('This is the third function');
+              setTimeout(function() {
+              console.log('This is the fourth function');
+              setTimeout(function() {
+                console.log('This is the fifth function');
+                setTimeout(function() {
+                    console.log('This is the sixth function');
+                    setTimeout(function() {
+                        console.log('This is the seventh function'); 
+          }, 5000);
+        }, 4000);
+      }, 3000);
+    }, 2000);
+   }, 2000);
+ }, 2000);
+}, 2000);
+  };
+hellcallback();
