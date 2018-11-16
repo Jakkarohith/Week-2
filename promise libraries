@@ -1,0 +1,43 @@
+Promise Libraries:
+Bluebird:
+Bluebird is a fully-featured Promise library for JavaScript. The strongest feature of Bluebird is
+that it allows you to "promisify" other Node modules in order to use them asynchronously. Promisify 
+is a concept applied to callback functions. This concept is used to ensure that every callback function 
+which is called returns some sort of value.
+Bluebirdd is loaded with features and should be one of the fastest around and with special empathizes on error handling with
+good stack traces.
+
+Catiline:
+Catiline.js is a JavaScript library all about workers. Workers should make your life easier, not harder, and with Catiline.js
+launching a new worker is as simple as calling a function. It works the same across all (modern) browsers.
+Formerly known as Communist.js.
+
+ES6 Promise polyfill:
+This is a polyfill of ES6 Promise. The implementation based on Jake Archibald implementation a subset of rsvp.js.
+The main target of this library is the implementation of the Javascript Promises that are conformance with browser's implementations
+and to be minimal as possible in size. So it's strictly polyfill of ES6 Promise specification and nothing more.
+It passes both Promises/A+ test suite and rsvp.js test suite.Borrows code from RSVP, but implemented 
+according to the ECMAScript 6 specification.
+
+jQuery:
+jQuery introduced the Deferred object in the 1.5 version of the library. The Deferred object 
+is actually an implementation of the Promise interface. It provides all the features of a Promise,
+and in addition, it also allows to create new deferred objects and attach future handlers to
+them and resolve them programmatically.
+
+Q:	
+A light edition of it can be found in the popular AngularJS framework from Google.
+If a function cannot return a value or throw an exception without blocking, it can return a promise instead. 
+A promise is an object that represents the return value or the thrown exception that the function may eventually provide.
+A promise can also be used as a proxy for a remote object to overcome latency.
+
+kew:
+a lightweight (and super fast) promise/deferred framework for node.js.
+kew is a lightweight promise framework with an aim of providing a base set of functionality 
+similar to that provided by the Q library.
+It can be considered as a optimized edition of Q but with a smaller feature set.
+
+Few more Promise libraries  are :
+MyDeferred
+MyPromise	
+Yui
