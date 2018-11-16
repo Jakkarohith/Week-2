@@ -31,3 +31,7 @@ function hellcallback() {
 }, 2000);
   };
 hellcallback();
+
+Disadvantages:
+1.Increase in the number of callbacks would make code less readable.
+2.Increase in number of callback will flood the event loop which will effect the performance.
