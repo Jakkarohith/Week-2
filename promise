@@ -28,4 +28,10 @@ const myPromise = new Promise((resolve, reject) => {
   // or
   //   reject("reason");
 });
-.
+
+
+Advantages of promises:
+Promises reduces the number of lines effectively when compared to callback.
+promise handle asynchronous program in a better way when compared to callbacks.
+promise allows to increase the readablity in the code.
+Provides catching mechanism of errors which is not present in callbacks.
