@@ -1,0 +1,33 @@
+Async:
+Async is a keyword.The word “async” before a function means one simple thing that is a function always returns a promise.
+If the   code has return <non-promise> in it, then JavaScript automatically wraps it into a resolved promise with that value.
+It can be placed before a function.
+Ex:
+    async function f() {
+    return 1;
+    }
+For example,Resolved promise with the result of 1.
+   async function f() {
+   return 1;
+   }
+   f().then(alert); 
+Retutning a promise explicitly.
+ Ex:
+     async function f() {
+     return Promise.resolve(1);
+     }
+     f().then(alert);
+ So, async ensures that the function returns a promise.
+Await:
+The keyword await makes JavaScript wait until that promise settles and returns its result.This will work only within Async function.
+Await literally makes JavaScript wait until the promise settles, and then go on with the result.It doesn’t cost any CPU
+resources, because the engine can do other jobs meanwhile it execute other   scripts,handle events etc.
+EX:
+ async function f() {
+  let promise = new Promise((resolve, reject) => {
+    setTimeout(() => resolve("done!"), 1000)
+  });
+  let result = await promise; //here the execution pauses until the value of returned to the variable result.
+  alert(result);
+}
+f();
