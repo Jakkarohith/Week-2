@@ -1,0 +1,111 @@
+NPM:
+NPM stands for Node package manager.npm is a package manager for the JavaScript programming language.It
+is the default package manager for the JavaScript runtime environment Node.js.It consists of a command line client,
+also called npm.NPM is the world's largest Software Registry.The registry contains over 800,000 code packages.NPM is free to use.
+
+Packages of npm:
+1.Express
+Express is the leading Node.js framework for quickly creating and publishing applications, and APIs. The frameworks minimal structure
+allows any Node.js developer to quickly launch a functional application with the use of Express Generator.
+
+
+2.Async.js
+Asynchronous JavaScript has rebuilt the way JavaScript content interacts with your web pages, allowing you to increase performance by 
+getting rid of render-blocking JavaScript. Render-blocking basically means that any JavaScript content that resides in the “above the
+fold” parts of a page will not be loaded, until JavaScript itself has been finished loading in the page. 
+
+3.Request – Simplified HTTP Client
+Apps constantly have to deal with external HTTP calls, whether to fetch data, or to load data directly from an external source. Having
+a reliable way to do HTTP calls is essential, which is why Request has grown to be the most reliable HTTP Client library of them all. 
+With Request, making HTTP calls becomes an easy, secure, and reliable way of accessing external content on the web, in any form imaginable.
+
+4.Browserify:
+Browserify allows us to create the kind of client-side codebase that’s organized, structured, and easy to navigate. Anyone can use Browserify 
+to create solid components that quickly allocate dependencies according to their use at any particular situation. Node.js projects tend
+to stack up on packages, libraries and scripts, and Browserify helps to structure everything neatly together.
+
+5.Grunt:
+Grunt provides a ton of plugins that you can use to automate even the most mundane tasks, without any extra effort from your side. And
+if you feel that there isn’t a plugin that does what you need, well.. just go ahead and create your own, Grunt lets you publish 
+Grunt-specific plugins through NPM.
+ 
+6.PM2:
+PM2 offers both process management for production applications, and a load-balancer to help with any possible performance tweaks. With PM2,4
+your applications stay online indefinitely, giving you the tools to reload apps without having to experience any sort of downtime.
+  
+7.Socket.IO:
+Socket lets you build truly real-time communication apps that would require real-time streams of content, whether directly from the data 
+that you are working with, or through an API that comes from an external source.
+  
+8.Commander.js:
+Commander.js (based on Ruby) is a great solution for creating command-line interfaces without any fuss.
+  
+9.Mocha
+Node.js and the browser, making asynchronous testing simple and fun. Mocha tests run serially, allowing for flexible and accurate reporting,
+while mapping uncaught exceptions to the correct test cases. Testing is so important to understand how well the application is
+performing.
+  
+10.Bower
+Bower manages your components for you, if they are of JS, CSS, or HTML nature. (Fonts, and visual content works too!) Bower carefully allocates
+all the packages that you are using, and then helps you to keep the updated, and regularly checked against any potential risks.
+  
+11.Underscore
+Underscore is popular amongst developers who enjoy more rapid development workflow through the use of programming helpers.
+  
+12.UglifyJS2
+UglifyJS2 trims and minifies your JavaScript files for you automatically. It’s flexible, easy to use, and helps you to gain
+those performance margins that you seek.
+   
+13.Cheerio
+Cheerio is a fast, flexible, and lean implementation of core jQuery designed specifically for the server.
+
+14.Passport
+Passport is a unique authentication module for Node.js devs. The main goal of Passport is to help with authentication requests,
+this Passport achieves through the use of third-party plugins that act as authentication methods.
+
+15.Nodemailer
+Nodemailer, a secure framework for doing email management within your Node.js applications. Documentation provides extensive
+amounts of samples on how to get Nodemailer to work with SMTP.
+
+16.Hapi
+Hapi is a server-framework that will happily assist you in building apps, and services. With Hapi, you can put all of your focus
+towards writing the application logic, with a very concise approach.Hapi can be used to build robust APIs, to handle high-load projects
+that need to scale.
+
+17.React
+React — the most talked about UI framework of modern JavaScript times. Combining React with Node.js makes for an amazingly fast web 
+application experience. Developed by Facebook.
+
+18.Karma
+Karma is one such tool that does the job of testing beautifully. The reasons to use Karma are long, some of them include: ability to
+test your code in the browser, but also cross-browser.
+  
+19.Pug
+Pug is a node templating engine. What is a templating engine? Well, it’s the kind of an engine that helps you to eliminate the need for
+writing complex HTML and JS code that could otherwise be shortened down to a more slim, more compact version. 
+  
+20.Node MySQL
+The Node MySQL library is a native implementation of the MySQL Protocol for the Node.js JS Client. 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
