@@ -1,0 +1,31 @@
+PROMISES:
+A Promise is a proxy for a value not necessarily known when the promise is created. It allows you to associate handlers
+with an asynchronous action's eventual success value or failure reason. This lets asynchronous methods return values like 
+synchronous methods: instead of immediately returning the final value, the asynchronous method returns a promise to supply 
+the value at some point in the future.
+Promises can be nested within each other to make code look better and easier to maintain when many 
+asynchronous function need to be called at the same time.A promise is immutable in nature if it is once fullfilled or rejected.
+A Promise is in one of these states:
+pending: initial state, neither fulfilled nor rejected.
+fulfilled: meaning that the operation completed successfully.
+rejected: meaning that the operation failed.
+A pending promise can either be fulfilled with a value, or rejected with a reason (error).
+Methods:
+1.promise.all(iterable)
+2.promise.race(iterable)
+3.promise.resolve(value)
+4.promise.reject(reason)
+
+A Promise object is created using the new keyword and its constructor. This constructor takes as its argument a function, 
+called the "executor function". This function should take two functions as parameters. The first of these functions 
+(resolve) is called when the asynchronous task completes successfully and returns the results of the 
+task as a value. The second (reject) is called when the task fails, and returns the reason for failure, which is typically 
+an error object.
+Syntax of a promise:
+const myPromise = new Promise((resolve, reject) => {
+  // do something asynchronous 
+  //   resolve(Value); 
+  // or
+  //   reject("reason");
+});
+.
