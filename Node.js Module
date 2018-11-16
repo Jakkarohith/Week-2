@@ -1,0 +1,39 @@
+Node js Module:
+Module in Node.js is a simple or complex functionality organized in single or multiple JavaScript files which can be reused
+throughout the Node.js application. Each module in Node.js has its own context, so it cannot interfere with other modules or
+pollute global scope.Also, each module can be placed in a separate .js file under a separate folder.Node.js implements CommonJS 
+modules standard.
+Node.js includes three types of modules:
+-Core Modules
+-Local Modules
+-Third Party Modules
+Core Modules:
+Node.js is a light weight framework. The core modules include bare minimum functionalities of Node.js. These core modules are compiled
+into its binary distribution and load automatically when Node.js process starts. However, you need to import the core module first in 
+order to use it in your application.
+1.http:The HTTP module provides a way of making Node.js transfer data over HTTP (Hyper Text Transfer Protocol).
+2.url:The URL module provides a way of parsing the URL string.
+3.querystring:The Query String module provides a way of parsing the URL query string.
+4.path:The Path module provides a way of working with directories and file paths.
+5.fs:The File System module provides a way of working with the computer's file system.
+6.util:The Util module provides access to some utility functions.
+7.zlib:The Zlib module provides a way of zip and unzip files
+8.https:The HTTPS module provides a way of making Node.js transfer data over HTTP TLS/SSL protocol, which is the secure HTTP protocol.
+9.dns:The DNS module provides a way of performing name resolutions.
+
+Local Modules:
+Local modules are modules created locally in your Node.js application. These modules include different functionalities of your application
+in separate files and folders. You can also package it and distribute it via NPM, so that Node.js community can use it. For example,
+if you need to connect to MongoDB and fetch data then you can create a module for it, which can be reused in your application.
+Exports is used to create local modules.
+Example:
+var log = {
+           //code 
+           }
+    };
+module.exports = log
+
+Third Party Modules:
+Third party modules are the modules created by an organisation and upload to npm.
+Example:
+Express,React,Node Mysql
