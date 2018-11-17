@@ -91,7 +91,7 @@ class Show
         }
         if(des!="clerk"||des!="manager"||des!="salesman"||des!="employee"||des!="boss")
         {
-          alert("please enter valid college name");  
+          alert("please enter valid designation");  
         }
         if(sal<0||sal>1000000)
         {
